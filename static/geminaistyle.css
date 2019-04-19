@@ -1,0 +1,90 @@
+body {
+    /* background-image: url(https://images.wallpaperscraft.com/image/starry_sky_clouds_sunset_120716_1920x1080.jpg); */
+    background: url(starry_sky.jpg);
+  }
+  h1 {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  h2 {
+    color: white;
+    font-family: verdana;
+    font-size: 180%;
+    text-align: center;
+  }
+  p#horo {
+    color: white;
+    font-family: verdana;
+    font-size: 78%;
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  p#reg {
+    color: white;
+    font-family: verdana;
+    font-size: 78%;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  .right {
+    color: white;
+    font-family: verdana;
+    font-size: 70%;
+    text-align: right;
+    float: right;
+
+}
+  /* .thumbnail:hover {
+    position:relative;
+    top:25px;
+    left:35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* .column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 30px;
+}
+.zoom {
+  display: inline-block;
+  position: relative;
+  padding: 50px;
+  transition: transform .1s;
+  width: 80px;
+  height: 80px;
+  margin: 0px;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}

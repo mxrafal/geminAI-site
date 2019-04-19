@@ -1,0 +1,1 @@
+{"word_level": false, "rnn_layers": 3, "rnn_bidirectional": false, "single_text": true, "dim_embeddings": 100, "rnn_size": 128, "is_csv": false, "max_length": 30, "max_words": 10000, "name": "zodiac"}
