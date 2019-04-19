@@ -35,10 +35,9 @@ def predict():
     return render_template("zodiac_predict.html", horoscope=res)
 
 if __name__ == "__main__":
-    #run locally
-    app.run(debug=True, threaded=False)
-
-    #run on heroku
-    # app.debug = True
-    # port = int(os.environ.get("PORT", 5000))
-    # app.run(host='0.0.0.0', port=port)
+    if os.environ['ENV'] == 'production':
+        app.debug = True
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host='0.0.0.0', port=port)
+    else:
+        app.run(debug=True, threaded=False)
