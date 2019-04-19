@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from mrmodel import get_model_api
 from textgenrnn import textgenrnn  
 import os
@@ -29,8 +29,16 @@ def contact():
 
 @app.route("/predict")
 def predict():
+    selected_sign = request.args.get('type')
     # res = mrmodel.generate()
-    res = model()    
+    res = model()
+    signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+    words = res.split(' ')
+    for word in words:
+        for s in signs:
+            if word == s:
+                word = selected_sign
+    res = ' '.join(words)    
     # return render_template("zodiac_predict.html", )
     return render_template("zodiac_predict.html", horoscope=res)
 
