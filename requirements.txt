@@ -2,7 +2,7 @@ absl-py==0.7.1
 alabaster==0.7.10
 asn1crypto==0.24.0
 astor==0.7.1
-astroid==1.6.3
+astroid==1.6.
 attrs==18.1.0
 Babel==2.5.3
 backcall==0.1.0
@@ -16,7 +16,7 @@ cffi==1.11.5
 chardet==3.0.4
 click==6.7
 cloudpickle==0.5.3
-clyent==1.2.2
+clyent
 colorama==0.3.9
 comtypes==1.1.4
 conda-verify==2.0.0
