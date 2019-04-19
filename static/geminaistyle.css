@@ -16,7 +16,7 @@ body {
   p#horo {
     color: white;
     font-family: verdana;
-    font-size: 78%;
+    font-size: 100%;
     text-align: center;
     margin-top: 10%;
     margin-right: 20%;
@@ -25,7 +25,7 @@ body {
   p#reg {
     color: white;
     font-family: verdana;
-    font-size: 78%;
+    font-size: 85%;
     text-align: center;
     margin-right: 20%;
     margin-left: 20%;

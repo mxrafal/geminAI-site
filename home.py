@@ -30,12 +30,15 @@ def contact():
 @app.route("/predict")
 def predict():
     # res = mrmodel.generate()
-    res = model()
-    print(res)    
+    res = model()    
     # return render_template("zodiac_predict.html", )
     return render_template("zodiac_predict.html", horoscope=res)
 
 if __name__ == "__main__":
-    app.debug = True
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    #run locally
+    app.run(debug=True, threaded=False)
+
+    #run on heroku
+    # app.debug = True
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host='0.0.0.0', port=port)
