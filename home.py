@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from mrmodel import get_model_api
 from textgenrnn import textgenrnn  
+import os
 
 
 model = get_model_api()
@@ -35,4 +36,6 @@ def predict():
     return render_template("zodiac_predict.html", horoscope=res)
 
 if __name__ == "__main__":
-    app.run(debug=True, threaded=False)
+    app.debug = True
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
