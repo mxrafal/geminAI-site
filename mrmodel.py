@@ -9,7 +9,7 @@ def get_model_api():
 
     def get_result():
         res = textgen.generate(1, return_as_list=True)[0]
-        signs = ['aries', 'taurus', 'gemini', 'cancer', 'leo', 'virgo', 'libra', 'scorpio', 'sagittarius', 'capricorn', 'aquarius', 'pisces']
+        signs = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
         for s in signs:
             if s in res:
                 res.replace(s, '')
